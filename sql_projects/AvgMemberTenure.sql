@@ -120,3 +120,7 @@ FROM Tenure AS T
     INNER JOIN DateDetail AS DD
         ON T.SaleDate = DD.Date
 GROUP BY FirstDayOfMonth, LocationID;
+
+
+-- Query 
+SELECT * FROM #TempAvgTenure
