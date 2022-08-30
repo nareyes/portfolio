@@ -6,18 +6,16 @@ https://platform.stratascratch.com/coding/10299-finding-updated-records?code_typ
 
 with
 
-    rankings
-    as
-    (
-        select
-            id,
-            first_name,
-            last_name,
-            department_id,
-            salary,
-            dense_rank() over (partition by id order by salary desc) as salary_rank
-        from ms_employee_salary
-    )
+rankings as (
+    select
+        id,
+        first_name,
+        last_name,
+        department_id,
+        salary,
+        dense_rank() over (partition by id order by salary desc) as salary_rank
+    from ms_employee_salary
+)
 
 select
     id,
