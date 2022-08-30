@@ -4,18 +4,36 @@ We have a table with employees and their salaries, however, some of the records 
 https://platform.stratascratch.com/coding/10299-finding-updated-records?code_type=1
 */
 
+-- initial submission using groupby
+select
+    id,
+    first_name,
+    last_name,
+    department_id,
+    max (salary) as current_salary
+from ms_employee_salary
+group by 
+    id, 
+    first_name, 
+    last_name, 
+    department_id
+order by id asc;
+
+-- optimized submission using cte
 with
 
-rankings as (
-    select
-        id,
-        first_name,
-        last_name,
-        department_id,
-        salary,
-        dense_rank() over (partition by id order by salary desc) as salary_rank
-    from ms_employee_salary
-)
+    rankings
+    as
+    (
+        select
+            id,
+            first_name,
+            last_name,
+            department_id,
+            salary,
+            dense_rank() over (partition by id order by salary desc) as salary_rank
+        from ms_employee_salary
+    )
 
 select
     id,
