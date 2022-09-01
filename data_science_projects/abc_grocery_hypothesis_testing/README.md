@@ -3,10 +3,10 @@ In this project we apply Chi-Square Test For Independence (a Hypothesis Test) to
 __________
 
 ## Table of Contents
-- [Project Context](https://github.com/nareyes/personal_portfolio/new/main/data_science_projects/abc_grocery_hypothesis_testing#project-context)
-- [Project Actions](https://github.com/nareyes/personal_portfolio/edit/main/data_science_projects/abc_grocery_hypothesis_testing/README.md#project-actions)
-- [Data Prep, Application, and Results](https://github.com/nareyes/personal_portfolio/edit/main/data_science_projects/abc_grocery_hypothesis_testing/README.md#data-preparation-application-and-results)
-- [Concept Overview](https://github.com/nareyes/personal_portfolio/edit/main/data_science_projects/abc_grocery_hypothesis_testing/README.md#concept-overview)
+- [Project Context](#project-context)
+- [Project Actions](#project-actions)
+- [Data Prep, Application, and Results](#data-preparation-application-and-results)
+- [Concept Overview](#concept-overview)
 __________
 
 ## Project Context
