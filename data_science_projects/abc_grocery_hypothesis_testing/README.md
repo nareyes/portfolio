@@ -35,17 +35,18 @@ As a requirement of the Chi-Square Test For Independence, we aggregated this dat
 __________
 
 ## Data Preparation, Application, and Results
-Jupyter Notebook: ABC Grocery Chi-Square_Test
+[Jupyter Notebook: ABC Grocery Chi-Square_Test](https://github.com/nareyes/personal_portfolio/blob/main/data_science_projects/abc_grocery_hypothesis_testing/abc_grocery_chi-square_test.ipynb)
+_________
 _________
 
 <br>
 
-## Concept Overview
+# Concept Overview
 
-### A/B Testing
+## A/B Testing
 An A/B Test can be described as a randomised experiment containing two groups, A & B, that receive different experiences. Within an A/B Test, we look to understand and measure the response of each group - and the information from this helps drive future business decisions. Application of A/B testing can range from testing different online ad strategies, different email subject lines when contacting customers, or testing the effect of mailing customers a coupon, vs a control group.  
 
-### Hypothesis Testing
+## Hypothesis Testing
 A Hypothesis Test is used to assess the plausibility, or likelihood of an assumed viewpoint based on sample data - in other words, it helps us assess whether a certain view we have about some data is likely to be true or not.
 
 There are many different scenarios we can run Hypothesis Tests on, and they all have slightly different techniques and formulas - however they all have some shared, fundamental steps & logic that underpin how they work.
@@ -61,7 +62,7 @@ In a Hypothesis Test, before we collect any data or run any numbers - we specify
 
 So to summarise, in a Hypothesis Test, we test the Null Hypothesis using a p-value and then decide it’s fate based on the Acceptance Criteria.
 
-### Chi-Square Test For Independence
+## Chi-Square Test For Independence
 The Chi-Square Test For Independence is a type of Hypothesis Test that assumes observed frequencies for categorical variables will match the expected frequencies. The *assumption* is the Null Hypothesis, which as discussed above is always the viewpoint that the two groups will be equal.  With the Chi-Square Test For Independence we look to calculate a statistic which, based on the specified Acceptance Criteria will mean we either reject or support this initial assumption.
 - The *observed frequencies* are the true values that we’ve seen.
 - The *expected frequencies* are essentially what we would *expect* to see based on all of the data.
