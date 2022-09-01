@@ -1,4 +1,4 @@
 # Data Science Projects
-- Data Analysis
-- [Hypothesis Testing](https://github.com/nareyes/personal_portfolio/tree/main/data_science_projects/hypothesis_testing)
-- [Regression Models](https://github.com/nareyes/personal_portfolio/tree/main/data_science_projects/regression_models)
+
+- [ABC Grocery Hypothesis Testing](https://github.com/nareyes/personal_portfolio/tree/main/data_science_projects/abc_grocery_hypothesis_testing)
+> In this project we apply Chi-Square Test For Independence (a Hypothesis Test) to assess the performance of two types of mailers that were sent out to promote a new service for a simulated grocery store.
