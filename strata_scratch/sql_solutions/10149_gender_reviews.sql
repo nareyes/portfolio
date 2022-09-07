@@ -9,7 +9,7 @@ select
     avg (review_score) as avg_score
 from airbnb_guests as g
     inner join airbnb_reviews as r
-    on g.guest_id = r.from_user
+        on g.guest_id = r.from_user
 where r.from_type = 'guest'
 group by g.gender
 order by avg_score desc
