@@ -14,6 +14,6 @@ select
 from customers as c
     -- left join preserves customer side in the case of missing orders (for reproducibility)
     left join orders as o
-    on c.id = o.cust_id
+        on c.id = o.cust_id
 where first_name in ('Jill', 'Eva')
 order by o.cust_id asc;

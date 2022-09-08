@@ -11,13 +11,15 @@ select
     (select max (e.salary)
     from db_dept as d
         inner join db_employee as e
-        on d.id = e.department_id
-    where d.department = 'marketing') -
+            on d.id = e.department_id
+    where d.department = 'marketing') 
+    
+    - -- difference
     
     (select max (e.salary)
     from db_dept as d
         inner join db_employee as e
-        on d.id = e.department_id
+            on d.id = e.department_id
     where d.department = 'engineering')
     
 ) as salary_difference
