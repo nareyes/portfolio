@@ -1,4 +1,4 @@
-# ABC Grocery: Chi-Square Test for Independence
+# ABC Grocery Hypothesis Testing to Assess Campaign Performance
 In this project we apply Chi-Square Test For Independence (a Hypothesis Test) to assess the performance of two types of mailers that were sent out to promote a new service for a simulated grocery store.
 __________
 
@@ -10,8 +10,7 @@ __________
 __________
 
 ## Project Context
-
-Earlier in the year, ABC Grocer ran a campaign to promote their new Delivery Club. This is a membership that costs \$100 per year, but offers free grocery deliveries rather than the normal delivery cost of \$10 per delivery.
+Earlier in the year, ABC Grocery ran a campaign to promote their new Delivery Club. This is a membership that costs \$100 per year, but offers free grocery deliveries rather than the normal delivery cost of \$10 per delivery.
 
 For the campaign promoting the club, customers were put randomly into three groups;
 - The first group received a low quality, low cost mailer
