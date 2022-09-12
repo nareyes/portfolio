@@ -9,7 +9,6 @@ _________
 - [Project Context](#project-context)
 - [Project Actions](#project-actions)
 - [Data Prep, Application, and Results](#data-preparation-application-and-results)
-- [Concept Overview](#concept-overview)
 ________
 
 ## Project Context
@@ -35,16 +34,16 @@ As we are predicting a numeric output, we tested three regression modelling appr
 ________
 
 ## Data Preparation, Application, and Results
-[Jupyter Notebook: ]()
+[Jupyter Notebook: Predicting Loyalty Scores](https://github.com/nareyes/personal_portfolio/blob/main/data_science_projects/abc_grocery_regression_modeling/abc_grocery_predicting_loyalty.ipynb)
 
-**R-Squared Results (K-Fold Cross Validation, k = 4)**
-- Random Forest = 
-- Decision Tree = 
-- Linear Regression = 
+**R-Squared Results**
+- Random Forest = 0.9598627943571644
+- Decision Tree = 0.8809822761230048
+- Linear Regression = 0.7889476450479233
 
-**Adjusted R-Squared Results (Test Set)**
-- Random Forest = 
-- Decision Tree = 
-- Linear Regression = 
+**Adjusted R-Squared Results**
+- Random Forest = 0.9552756851408403
+- Decision Tree = 0.8673802505370625
+- Linear Regression = 0.762971970592283
 
 > As the most important outcome for this project was predictive accuracy, rather than explicitly understanding weighted drivers of prediction, we chose the Random Forest as the model to use for making predictions on the customers who were missing the *loyalty score* metric.
