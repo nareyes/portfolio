@@ -40,17 +40,11 @@ ________
 **R-Squared Results (K-Fold Cross Validation, k = 4)**
 - Random Forest = 
 - Decision Tree = 
-- Linear Regression = 0.8498188815541201
+- Linear Regression = 
 
 **Adjusted R-Squared Results (Test Set)**
 - Random Forest = 
 - Decision Tree = 
-- Linear Regression = 0.8313350515915503
+- Linear Regression = 
 
 > As the most important outcome for this project was predictive accuracy, rather than explicitly understanding weighted drivers of prediction, we chose the Random Forest as the model to use for making predictions on the customers who were missing the *loyalty score* metric.
-_________
-_________
-
-<br>
-
-# Concept Overview
