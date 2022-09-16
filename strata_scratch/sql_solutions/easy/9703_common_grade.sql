@@ -4,7 +4,6 @@ Find the most common grade earned by bakeries.
 https://platform.stratascratch.com/coding/9703-find-the-most-common-grade-earned-by-bakeries?code_type=1
 */
 
-
 with
 grade_freq as (
     select
