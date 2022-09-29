@@ -10,6 +10,6 @@ import numpy as np
 
 # Start writing code
 cheapest_property = airbnb_search_details.groupby(['city'])['price'].min().reset_index()[['city', 'price']]
-result = cheapest_property.rename(columns={'price': 'min_price'})
+result = cheapest_property.rename(columns = {'price': 'min_price'})
 
 result
