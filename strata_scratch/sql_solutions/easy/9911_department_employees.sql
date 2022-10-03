@@ -7,4 +7,4 @@ https://platform.stratascratch.com/coding/9911-departments-with-5-employees?code
 select department
 from employee
 group by department
-having count(id) >= 5;
+having count(distinct id) >= 5;
