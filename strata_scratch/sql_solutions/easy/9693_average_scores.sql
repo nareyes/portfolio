@@ -9,5 +9,6 @@ select
     grade,
     avg (score) as avg
 from los_angeles_restaurant_health_inspections
+where grade in ('A', 'B', 'C')
 group by grade
 order by grade asc;
