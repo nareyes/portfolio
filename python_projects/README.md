@@ -1,4 +1,4 @@
-# Python Projects (NEED TO ADD SHORT DESCRIPTIONS)
+# Python Projects
 
 - Beginner Projects
   - Eight Ball 
