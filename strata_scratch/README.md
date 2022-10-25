@@ -1,4 +1,4 @@
 # Strata Scratch
 - Projects
 - Python Solutions
-- SQL Solutions (PostgreSQL)
+- SQL Solutions (MS SQL)

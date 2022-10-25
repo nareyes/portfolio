@@ -9,5 +9,5 @@ select
     department,
     first_name,
     salary,
-    avg (salary) over (partition by department) as avg
+    avg (cast (salary as float)) over (partition by department) as avg_dept_salary
 from employee;
