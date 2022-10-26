@@ -10,25 +10,21 @@ select
     first_name,
     last_name,
     department_id,
-    max (salary) as current_salary
+    max (salary) as salary
 from ms_employee_salary
-group by 
-    id, 
-    first_name, 
-    last_name, 
-    department_id
+group by id, first_name, last_name, department_id
 order by id asc;
 
 -- optimized submission using cte
 with
-rankings as (
+salary_rank as (
     select
         id,
         first_name,
         last_name,
         department_id,
         salary,
-        dense_rank() over (partition by id order by salary desc) as salary_rank
+        dense_rank() over (partition by id order by salary desc) as ranking
     from ms_employee_salary
 )
 
@@ -37,7 +33,7 @@ select
     first_name,
     last_name,
     department_id,
-    salary as current_salary
-from rankings
-where salary_rank = 1
+    salary
+from salary_rank
+where ranking = 1
 order by id asc;
