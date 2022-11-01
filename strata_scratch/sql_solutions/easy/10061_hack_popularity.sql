@@ -11,9 +11,9 @@ https://platform.stratascratch.com/coding/10061-popularity-of-hack?code_type=1
 */
 
 select
-    location,
-    avg (popularity) as avg_popularity
+    e.location,
+    avg (cast (s.popularity as float)) as avg_popularity
 from facebook_employees as e
     inner join facebook_hack_survey as s
         on e.id = s.employee_id
-group by location;
+group by e.location;
