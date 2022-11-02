@@ -7,8 +7,8 @@ https://platform.stratascratch.com/coding/9693-find-the-average-score-for-grades
 
 select
     grade,
-    avg (score) as avg
+    avg (cast (score as float)) as avg_score
 from los_angeles_restaurant_health_inspections
-where grade in ('A', 'B', 'C')
+where lower (grade) in ('a', 'b', 'c')
 group by grade
 order by grade asc;
