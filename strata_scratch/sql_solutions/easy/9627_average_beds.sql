@@ -7,8 +7,8 @@ https://platform.stratascratch.com/coding/9627-3-bed-minimum?code_type=1
 
 select
     neighbourhood,
-    avg (beds) as n_beds_avg
+    avg (cast (beds as float)) as n_avg_beds
 from airbnb_search_details
 group by neighbourhood
 having sum (beds) >= 3
-order by n_beds_avg desc;
+order by n_avg_beds desc;
