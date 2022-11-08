@@ -8,8 +8,8 @@ https://platform.stratascratch.com/coding/9702-number-of-unique-facilities-and-i
 
 select
     facility_zip,
-    count (distinct facility_id) as no_facilities,
-    count (record_id) as no_inspections
+    count (distinct facility_id) as num_facilities,
+    count (record_id) as num_inspections
 from los_angeles_restaurant_health_inspections
 group by facility_zip
-order by no_inspections desc;
+order by num_inspections desc;
