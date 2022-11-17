@@ -8,10 +8,9 @@ https://platform.stratascratch.com/coding/10183-total-cost-of-orders?code_type=1
 select
     c.id,
     c.first_name,
-    sum (total_order_cost) as sum
+    sum (o.total_order_cost) as total_order_cost
 from customers as c
-    -- expected output shows customers with orders
-    inner join orders as o
+    inner join orders as o -- inner join outputs customers with orders
         on c.id = o.cust_id
 group by c.id, c.first_name
 order by c.first_name asc;
