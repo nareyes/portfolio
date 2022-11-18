@@ -34,7 +34,7 @@ As a requirement of the Chi-Square Test For Independence, we aggregated this dat
 __________
 
 ## Data Preparation, Application, and Results
-[Jupyter Notebook: ABC Grocery Chi-Square_Test](https://github.com/nareyes/personal_portfolio/blob/main/data_science_projects/abc_grocery_hypothesis_testing/abc_grocery_chi-square_test.ipynb)
+[Jupyter Notebook: ABC Grocery Chi-Square_Test](https://github.com/nareyes/personal_portfolio/blob/main/data_science_projects/dsi_projects/abc_grocery_hypothesis_testing/abc_grocery_chi-square_test.ipynb)
 _________
 _________
 

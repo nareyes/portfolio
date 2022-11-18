@@ -34,7 +34,7 @@ As we are predicting a numeric output, we tested three regression modelling appr
 ________
 
 ## Data Preparation, Application, and Results
-[Jupyter Notebook: Predicting Loyalty Scores](https://github.com/nareyes/personal_portfolio/blob/main/data_science_projects/abc_grocery_regression_modeling/abc_grocery_predicting_loyalty.ipynb)
+[Jupyter Notebook: Predicting Loyalty Scores](https://github.com/nareyes/personal_portfolio/blob/main/data_science_projects/dsi_project/abc_grocery_regression_modeling/abc_grocery_predicting_loyalty.ipynb)
 
 **R-Squared Results**
 - Random Forest = 0.9598627943571644
