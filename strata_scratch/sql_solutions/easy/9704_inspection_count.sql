@@ -8,7 +8,7 @@ https://platform.stratascratch.com/coding/9704-find-the-number-of-inspections-pe
 
 select
     activity_date,
-    count (distinct record_id)
+    count (distinct record_id) as num_inspections
 from los_angeles_restaurant_health_inspections
 group by activity_date
 order by activity_date asc;
