@@ -6,10 +6,10 @@ The output should be in ascending order.
 https://datalemur.com/questions/sql-page-with-no-likes
 */
 
-select
-  p.page_id
-from pages as p
-  left join page_likes as l
-    on p.page_id = l.page_id
-where l.liked_date is null
-order by p.page_id asc;
+SELECT
+  P.page_id
+FROM pages AS P
+  LEFT JOIN page_likes AS L
+    ON P.page_id = L.page_id
+WHERE L.liked_date IS NULL
+ORDER BY P.page_id ASC;
