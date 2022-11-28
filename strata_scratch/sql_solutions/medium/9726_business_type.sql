@@ -12,9 +12,9 @@ https://platform.stratascratch.com/coding/9726-classify-business-type?code_type=
 select
     distinct business_name,
     case
-        when business_name ilike '%restaurant%' then 'restaurant'
-        when business_name ilike '%school%' then 'school'
-        when business_name ilike any(array['%cafe%', '%café%', '%coffee%']) then 'cafe'
+        when business_name like '%restaurant%' then 'restaurant'
+        when business_name like '%school%' then 'school'
+        when business_name like '%cafe%' or business_name like '%coffee%'  or business_name like  '%café%' then 'cafe'
         else 'other'
     end as business_type
 from sf_restaurant_health_violations;

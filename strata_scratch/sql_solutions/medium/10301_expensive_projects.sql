@@ -8,7 +8,7 @@ https://platform.stratascratch.com/coding/10301-expensive-projects?code_type=1
 
 select
     p.title as project,
-    round ((budget / count (emp_id)::float)::numeric, 0) as budget_emp
+    round (cast (budget as float) / count (emp_id), 0) as budget_emp
 from ms_projects as p
     join ms_emp_projects as e
         on p.id = e.project_id

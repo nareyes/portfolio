@@ -4,13 +4,12 @@ Write a query to find which gender gives a higher average review score when writ
 https://platform.stratascratch.com/coding/10149-gender-with-generous-reviews?code_type=1
 */
 
-select
+select top 1
     g.gender,
-    avg (review_score) as avg_score
+    avg (cast (review_score as float)) as avg_score
 from airbnb_guests as g
     inner join airbnb_reviews as r
         on g.guest_id = r.from_user
 where r.from_type = 'guest'
 group by g.gender
-order by avg_score desc
-limit 1;
+order by avg_score desc;

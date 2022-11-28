@@ -11,6 +11,6 @@ select distinct
     pe_description
 from los_angeles_restaurant_health_inspections
 where
-    owner_name ilike '%bakery%'
-    and pe_description ilike '%low risk%'
+    owner_name like '%bakery%'
+    and pe_description like '%low risk%'
 order by owner_name asc;
